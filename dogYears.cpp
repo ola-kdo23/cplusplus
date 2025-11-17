@@ -21,7 +21,7 @@ int main(){
     if(dogYear<=0){
         std::cout << "Whoops, thats an invalid dog age!";
     }
-    else if (dogYear==1 or dogYear==2)
+    else if (dogYear==1 || dogYear==2)
     {
         std::cout << "Woah, your dog is " << 21/dogYear << " years old in human years!\n";
     }
@@ -35,3 +35,25 @@ int main(){
 2. Demonstrate basic basic input collection from user
 3. Demnstrate basic branching.
 */
+
+//branching redone using switch statements:
+/*
+switch (dogYear){
+    case 1:
+        std::cout << "Woah, your dog is " << 21 << " years old in human years!\n";
+        break;
+    case 2:
+        std::cout << "Woah, your dog is " << 21/2 << " years old in human years!\n";
+        break;
+    default:
+        std::cout << "Woah, your dog is " << 21+ ((dogYear-2) * 4) << "years in human years";
+        break;
+
+}
+*/
+//problem with this code? ite not robost we cant handle invalid entries! But it shows what switch statement in c look like:
+//switch (variable with finite number of possibilities)
+//case (one of those possibilities):
+//action to be carried out;
+//default (runs anytime value that is seen is outside of notes cases):
+//end every case and default block with break;
